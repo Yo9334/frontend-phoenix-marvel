@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import Favorite from "./pages/Favorite";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import Footer from "./components/Footer";
 
 function App() {
   const [token, setToken] = useState(Cookies.get("token") || 0);
@@ -32,7 +33,7 @@ function App() {
     }
   };
 
-  // const url = "http://localhost:4000/";
+  // const url = "http://localhost:4000";
   const url = "https://site--phoenix-marvel--t9jv7l54vjwq.code.run";
 
   /* search by title OU Name */
@@ -80,6 +81,7 @@ function App() {
             element={<Favorite url={url} handleToken={handleToken} />}
           />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

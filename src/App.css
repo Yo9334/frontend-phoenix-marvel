@@ -236,3 +236,31 @@ header .logo {
   padding: 20px;
   gap: 10px;
 }
+
+/* Favorite */
+.favorite {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fav-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fav-row img {
+  width: 200px;
+  height: 320px;
+}
+
+/* Footer */
+footer {
+  background-color: #202020;
+  padding: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
